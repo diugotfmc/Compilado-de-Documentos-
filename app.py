@@ -3,14 +3,14 @@ from PyPDF2 import PdfReader, PdfWriter
 from reportlab.pdfgen import canvas
 import io
 
-st.set_page_config(page_title="Mesclagem de PDFs para RL", layout="wide")
-st.title("📘 Mesclagem de PDFs para Relatório de Medição")
+st.set_page_config(page_title="Mesclagem de PDFs Compilado", layout="wide")
+st.title("📘 Mesclagem de PDFs para Compilado de Documentos")
 
 # ===============================
 # INTERFACE DO USUÁRIO
 # ===============================
 st.subheader("📌 PDF Mãe")
-pdf_mae_file = st.file_uploader("Selecione o Relatório de Medição", type=["pdf"])
+pdf_mae_file = st.file_uploader("Selecione o Compilado", type=["pdf"])
 
 st.markdown("---")
 
