@@ -54,7 +54,7 @@ colx, coly = st.columns(2)
 with colx:
     pos_x = st.number_input("Coordenada X", min_value=0, max_value=1000, value=503)
 with coly:
-    pos_y = st.number_input("Coordenada Y", min_value=0, max_value=1000, value=779)
+    pos_y = st.number_input("Coordenada Y", min_value=0, max_value=1000, value=730)
 
 # Nome do arquivo final
 nome_arquivo = st.text_input("📝 Nome do arquivo final (sem .pdf)", value="Relatorio_Final")
@@ -125,7 +125,7 @@ def adicionar_numeracao(pdf_stream, indices_para_numerar, pos_x, pos_y):
             packet = io.BytesIO()
             can = canvas.Canvas(packet, pagesize=(largura, altura))
             texto = f"{i + 1}/{total_paginas}"
-            can.setFont("Helvetica", 10)
+            can.setFont("Helvetica-Bold", 10)
             can.drawString(pos_x, pos_y, texto)
             can.save()
             packet.seek(0)
