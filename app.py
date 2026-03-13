@@ -124,8 +124,8 @@ def adicionar_numeracao(pdf_stream, indices_para_numerar, pos_x, pos_y):
 
             packet = io.BytesIO()
             can = canvas.Canvas(packet, pagesize=(largura, altura))
-            texto = f"{i + 1} de {total_paginas}"
-            can.setFont("Helvetica", 12)
+            texto = f"{i + 1}/{total_paginas}"
+            can.setFont("Helvetica", 10)
             can.drawString(pos_x, pos_y, texto)
             can.save()
             packet.seek(0)
