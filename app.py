@@ -54,7 +54,7 @@ colx, coly = st.columns(2)
 with colx:
     pos_x = st.number_input("Coordenada X", min_value=0, max_value=1000, value=503)
 with coly:
-    pos_y = st.number_input("Coordenada Y", min_value=0, max_value=1000, value=730)
+    pos_y = st.number_input("Coordenada Y", min_value=0, max_value=1000, value=735)
 
 # Nome do arquivo final
 nome_arquivo = st.text_input("📝 Nome do arquivo final (sem .pdf)", value="Relatorio_Final")
